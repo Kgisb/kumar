@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-# Streamlit App
+# Streamlit App Title
 st.title("Interactive Sales Tracker Dashboard")
 
 # Load Google Sheet data (publicly accessible)
@@ -38,7 +38,7 @@ summary = filtered_data.groupby('AC Name').agg({
     'Overall Leads': 'sum'
 }).reset_index()
 
-# Display Data
+# Display Filtered Data
 st.header("Filtered Data")
 st.dataframe(filtered_data)
 
