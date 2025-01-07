@@ -1,6 +1,8 @@
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+pip install plotly streamlit pandas
+streamlit run streamlit_sales_dashboard.py
 
 # Streamlit App Title
 st.title("Interactive Sales Tracker Dashboard")
